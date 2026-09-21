@@ -1850,6 +1850,162 @@ input[type="range"]::-webkit-slider-thumb:hover {
     }
 }
 
+/* Tablet & Mobile Specific Modal & Resume Optimization */
+@media (max-width: 768px) {
+    .modal-backdrop {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .modal-dialog {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        max-width: 100vw;
+        border-radius: 0;
+        border: none;
+    }
+
+    .modal-header {
+        padding: 12px 14px;
+        gap: 8px;
+    }
+
+    .modal-title-box h2 {
+        font-size: 0.95rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 170px;
+    }
+
+    .modal-sub {
+        display: none;
+    }
+
+    .modal-actions {
+        gap: 8px;
+    }
+
+    .modal-actions .btn {
+        padding: 6px 12px;
+        font-size: 0.78rem;
+        gap: 4px;
+    }
+
+    .modal-close {
+        padding: 4px 8px;
+        font-size: 1.2rem;
+    }
+
+    .modal-body {
+        padding: 10px 8px;
+        background: #1e293b;
+        display: block;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .resume-sheet {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 18px 14px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        overflow-x: hidden;
+    }
+
+    .sheet-header {
+        padding-bottom: 8px;
+        margin-bottom: 12px;
+    }
+
+    .sheet-name {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        line-height: 1.2;
+        margin-bottom: 3px;
+    }
+
+    .sheet-title {
+        font-size: 11.5px;
+        line-height: 1.4;
+        margin-bottom: 8px;
+    }
+
+    .sheet-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        font-size: 11px;
+    }
+
+    .sheet-section {
+        margin-bottom: 14px;
+    }
+
+    .sheet-heading {
+        font-size: 13px;
+        margin-bottom: 6px;
+        padding-bottom: 2px;
+    }
+
+    .sheet-text {
+        font-size: 11.5px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .sheet-list {
+        padding-left: 16px;
+    }
+
+    .sheet-list li {
+        font-size: 11.5px;
+        line-height: 1.5;
+        margin-bottom: 4px;
+    }
+
+    .sheet-job {
+        margin-bottom: 12px;
+    }
+
+    .sheet-job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+        margin-bottom: 3px;
+    }
+
+    .sheet-company {
+        font-size: 12px;
+        line-height: 1.35;
+        word-break: break-word;
+    }
+
+    .sheet-date {
+        font-size: 11px;
+        color: #2980b9;
+        font-weight: 600;
+    }
+
+    .sheet-role {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .sheet-bullets {
+        padding-left: 16px;
+        font-size: 11.5px;
+        line-height: 1.45;
+    }
+
+    .sheet-bullets li {
+        margin-bottom: 4px;
+    }
+}
+
 @media (max-width: 600px) {
     .hero-title {
         font-size: 2.1rem;
@@ -1871,6 +2027,22 @@ input[type="range"]::-webkit-slider-thumb:hover {
         flex-direction: column;
         align-items: center;
         gap: 4px;
+    }
+}
+
+@media (max-width: 420px) {
+    .modal-title-box h2 {
+        font-size: 0.85rem;
+        max-width: 120px;
+    }
+
+    .modal-actions .btn {
+        padding: 5px 8px;
+        font-size: 0.7rem;
+    }
+
+    .resume-sheet {
+        padding: 14px 10px;
     }
 }
 
