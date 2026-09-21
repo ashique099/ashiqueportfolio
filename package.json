@@ -1,0 +1,17 @@
+{
+  "name": "md-ashique-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Md Ashique - Digital Marketing Strategist & SEO Specialist",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8080"
+  },
+  "keywords": [
+    "portfolio",
+    "seo",
+    "digital-marketing",
+    "google-ads"
+  ],
+  "author": "Md Ashique",
+  "license": "MIT"
+}

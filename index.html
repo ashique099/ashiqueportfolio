@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Ashique | Digital Marketing Strategist & SEO Specialist</title>
+    <meta name="description"
+        content="Portfolio of Md Ashique - Results-driven Digital Marketing Strategist, SEO Specialist, Google Ads & Growth Marketer specializing in ROAS maximization and organic scale.">
+    <meta name="keywords"
+        content="Md Ashique, SEO Specialist, Digital Marketing, Google Ads, Growth Marketing, YouTube SEO, ROAS Optimization, Katihar Bihar">
+    <meta name="author" content="Md Ashique">
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:title" content="Md Ashique | Digital Marketing Strategist & SEO Specialist">
+    <meta property="og:description"
+        content="Driving measurable revenue growth through SEO, Google Ads, YouTube optimization, and data-driven marketing workflows.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Interactive Animated Points Background (Responds to Mouse Cursor) -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Background Glow Blobs -->
+    <div class="bg-glow blob-1"></div>
+    <div class="bg-glow blob-2"></div>
+    <div class="bg-glow blob-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <span class="logo-badge">MA</span>
+                <span class="logo-text">Md Ashique<span class="dot">.</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Competencies</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#calculator" class="nav-link">ROI Simulator</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn btn-outline btn-sm" id="open-resume-btn" aria-label="View Resume">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    <span>View Resume</span>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-pill">
+                        <span class="status-dot"></span>
+                        <span>Available for Growth & SEO Roles</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Transforming Traffic into Revenue with
+                        <span class="gradient-text">Data-Driven Growth</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Hi, I'm <strong>Md Ashique</strong>. A results-oriented <strong>Digital Marketing Strategist &
+                            SEO Specialist</strong> based in Katihar, Bihar. I engineer high-converting Google Ads
+                        campaigns, dominate search results with precision SEO & YouTube strategies, and streamline
+                        cross-functional marketing operations.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            <span>Start a Project</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#experience" class="btn btn-glass btn-lg">
+                            <span>Explore Case Studies</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-badges">
+                        <div class="badge-item">
+                            <span class="badge-icon">📍</span>
+                            <span>Katihar, Bihar, India</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon">🎯</span>
+                            <span>ROAS & CPA Focused</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon">⚡</span>
+                            <span>Cross-Functional Team Leader</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- Hero Profile Photo Showcase -->
+                    <div class="hero-profile-card glass-card">
+                        <div class="profile-image-container">
+                            <img src="ashique.jpg" alt="Md Ashique - Digital Marketing Strategist & SEO Specialist"
+                                class="hero-profile-img">
+                            <div class="profile-glow-ring"></div>
+
+                            <!-- Floating Achievement Badges on Photo -->
+                            <div class="floating-badge badge-top-right">
+                                <span class="badge-icon-mini bg-cyan-glow">📈</span>
+                                <div>
+                                    <span class="fb-number">+280%</span>
+                                    <span class="fb-text">SEO Traffic Scale</span>
+                                </div>
+                            </div>
+
+                            <div class="floating-badge badge-bottom-left">
+                                <span class="badge-icon-mini bg-emerald-glow">🎯</span>
+                                <div>
+                                    <span class="fb-number">4.2x ROAS</span>
+                                    <span class="fb-text">Google Ads Lead</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-caption">
+                            <div class="caption-info">
+                                <span class="caption-title">Md Ashique</span>
+                                <span class="caption-subtitle">Growth Strategist & SEO Lead</span>
+                            </div>
+                            <div class="verified-pill">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <span>Verified Specialist</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card hero-metrics-card">
+                        <div class="card-header-mini">
+                            <div class="traffic-light-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="pill-mini">Live Performance Stats</span>
+                        </div>
+
+                        <div class="kpi-grid">
+                            <div class="kpi-box">
+                                <div class="kpi-icon-wrap bg-cyan-glow">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                        <polyline points="17 6 23 6 23 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="kpi-info">
+                                    <span class="kpi-number" data-target="280">+280%</span>
+                                    <span class="kpi-label">Organic Search Growth</span>
+                                </div>
+                            </div>
+
+                            <div class="kpi-box">
+                                <div class="kpi-icon-wrap bg-emerald-glow">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="kpi-info">
+                                    <span class="kpi-number" data-target="4.2">4.2x</span>
+                                    <span class="kpi-label">Average Ad ROAS</span>
+                                </div>
+                            </div>
+
+                            <div class="kpi-box">
+                                <div class="kpi-icon-wrap bg-violet-glow">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <div class="kpi-info">
+                                    <span class="kpi-number" data-target="35">-35%</span>
+                                    <span class="kpi-label">CPA Cost Reduction</span>
+                                </div>
+                            </div>
+
+                            <div class="kpi-box">
+                                <div class="kpi-icon-wrap bg-amber-glow">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                </div>
+                                <div class="kpi-info">
+                                    <span class="kpi-number" data-target="50">50K+</span>
+                                    <span class="kpi-label">Targeted Inquiries</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini Trend Bar Widget -->
+                        <div class="campaign-trend-widget">
+                            <div class="trend-meta">
+                                <span>Campaign Performance Index</span>
+                                <span class="trend-val">+47.8% MoM</span>
+                            </div>
+                            <div class="trend-bars">
+                                <div class="bar" style="height: 35%;"></div>
+                                <div class="bar" style="height: 48%;"></div>
+                                <div class="bar" style="height: 60%;"></div>
+                                <div class="bar" style="height: 52%;"></div>
+                                <div class="bar" style="height: 75%;"></div>
+                                <div class="bar" style="height: 85%;"></div>
+                                <div class="bar active" style="height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand / Client Strip -->
+        <section class="trust-strip">
+            <div class="container trust-wrapper">
+                <span class="trust-label">Specialized in Growth & Lead Acquisition for:</span>
+                <div class="trust-tags">
+                    <span class="trust-tag">EdTech & Coaching</span>
+                    <span class="trust-tag">Healthcare & Diagnostics</span>
+                    <span class="trust-tag">Local Business Franchises</span>
+                    <span class="trust-tag">E-Commerce & Lead Gen</span>
+                    <span class="trust-tag">High-Volume Content Engines</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Behind The Strategy</span>
+                    <h2 class="section-title">Bridging Performance Marketing with Operational Excellence</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="about-avatar-wrapper">
+                            <div class="avatar-ring">
+                                <img src="ashique.jpg" alt="Md Ashique" class="about-avatar-img">
+                            </div>
+                            <div class="avatar-meta">
+                                <h3>Md Ashique</h3>
+                                <p>Digital Marketing Strategist & SEO Lead</p>
+                                <span class="badge-accent">📍 Katihar, Bihar</span>
+                            </div>
+                        </div>
+
+                        <div class="about-bio-text">
+                            <p>
+                                I am a goal-oriented <strong>Digital Marketing & SEO Specialist</strong> with a verified
+                                record of driving real, measurable commercial growth. Whether scaling search visibility
+                                through technical and on-page SEO, orchestrating aggressive YouTube organic
+                                distribution, or managing budget-disciplined Google Ads campaigns, I treat marketing as
+                                an exact science.
+                            </p>
+                            <p>
+                                Beyond running campaigns, I specialize in <strong>operational leadership</strong>:
+                                organizing and managing diverse teams including telecallers, academic typists, and
+                                instructors, ensuring content pipeline compliance and maximum operational efficiency.
+                            </p>
+                        </div>
+
+                        <div class="quick-contact-row">
+                            <button class="btn btn-outline btn-sm copy-btn" id="copy-email-btn"
+                                data-email="ashiquektr099@gmail.com">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                <span>ashiquektr099@gmail.com</span>
+                            </button>
+                            <a href="https://www.linkedin.com/in/md-ashique-9029262a7" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-glass btn-sm">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.32c-.88 0-1.6.72-1.6 1.6s.72 1.6 1.6 1.6 1.6-.72 1.6-1.6-.72-1.6-1.6-1.6Z" />
+                                </svg>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Strategic Pillars -->
+                    <div class="pillars-container">
+                        <div class="pillar-card glass-card">
+                            <div class="pillar-icon bg-cyan-glow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </div>
+                            <div class="pillar-body">
+                                <h4>Organic Domination (SEO & YouTube)</h4>
+                                <p>Capturing high-intent organic search queries through in-depth keyword architecture,
+                                    technical audits, localized discovery, and YouTube algorithm-optimized content
+                                    rollouts.</p>
+                            </div>
+                        </div>
+
+                        <div class="pillar-card glass-card">
+                            <div class="pillar-icon bg-emerald-glow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <div class="pillar-body">
+                                <h4>High-ROAS Paid Acquisition</h4>
+                                <p>Managing Google Ads with laser-targeted keyword match strategies, negative keyword
+                                    pruning, and smart bidding adjustments designed to slash CPA and scale clinic/class
+                                    inquiries.</p>
+                            </div>
+                        </div>
+
+                        <div class="pillar-card glass-card">
+                            <div class="pillar-icon bg-violet-glow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="pillar-body">
+                                <h4>Team Workflows & Data Records</h4>
+                                <p>Aligning telecalling reps, typists, and educational faculty with tight tracking
+                                    standard operating procedures (SOPs) to turn inbound leads into enrolled students
+                                    and happy patients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Competencies & Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">What I Bring to the Table</span>
+                    <h2 class="section-title">Core Competencies & Tool Stack</h2>
+                    <p class="section-desc">A multifaceted toolkit combining strategic growth planning, technical
+                        analytics, and operational deployment.</p>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="skill-tabs">
+                    <button class="skill-tab active" data-category="all">All Skills</button>
+                    <button class="skill-tab" data-category="seo">SEO & Organic</button>
+                    <button class="skill-tab" data-category="ads">Paid Ads & ROAS</button>
+                    <button class="skill-tab" data-category="strategy">Strategy & Tracking</button>
+                    <button class="skill-tab" data-category="leadership">Leadership & Ops</button>
+                </div>
+
+                <div class="skills-grid" id="skills-grid">
+                    <!-- SEO Group -->
+                    <div class="skill-card glass-card" data-category="seo">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">🔍</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <h3>Search Engine Optimization (SEO)</h3>
+                        <p>Comprehensive On-Page, Off-Page, and Technical SEO tactics to achieve top SERP rankings for
+                            high-intent keywords.</p>
+                        <div class="skill-progress-wrap">
+                            <div class="progress-bar" style="width: 95%;"></div>
+                        </div>
+                        <span class="progress-label">95% Proficiency</span>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="seo">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">▶️</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <h3>YouTube SEO & Video Optimization</h3>
+                        <p>Optimizing titles, descriptions, metadata tags, and video engagement retention hooks for
+                            educational content discovery.</p>
+                        <div class="skill-progress-wrap">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                        <span class="progress-label">90% Proficiency</span>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="seo">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">📍</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <h3>Local SEO & Google Business Profile</h3>
+                        <p>Hyperlocal citations, review velocity optimization, and local map-pack dominance for
+                            franchise & clinic footfall.</p>
+                        <div class="skill-progress-wrap">
+                            <div class="progress-bar" style="width: 94%;"></div>
+                        </div>
+                        <span class="progress-label">94% Proficiency</span>
+                    </div>
+
+                    <!-- Ads Group -->
+                    <div class="skill-card glass-card" data-category="ads">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">🎯</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <h3>Google Ads (Search, Display, Call)</h3>
+                        <p>High-converting campaign setup, SKAG/thematic ad groups, bid strategy tuning, and click-fraud
+                            elimination.</p>
+                        <div class="skill-progress-wrap">
+                            <div class="progress-bar" style="width: 92%;"></div>
+                        </div>
+                        <span class="progress-label">92% Proficiency</span>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="ads">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">📉</span>
+                            <span class="skill-level">Specialist</span>
+                        </div>
+                        <h3>ROAS Maximization & CPA Reduction</h3>
+                        <p>Rigorous A/B testing of ad copies and landing page hooks to minimize cost-per-lead while
+                            elevating revenue return.</p>
+                        <div class="skill-progress-wrap">
+                            <div class="progress-bar" style="width: 93%;"></div>
+                        </div>
+                        <span class="progress-label">93% Proficiency</span>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="ads">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">🚀</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <h3>Lead Generation Funnels</h3>
+                        <p>Building high-converting multi-stage capture systems combining ads, call-in inquiries, and
+                            nurture sequences.</p>
+                        <div class="skill-progress-wrap">
+                            <div class="progress-bar" style="width: 88%;"></div>
+                        </div>
+                        <span class="progress-label">88% Proficiency</span>
+                    </div>
+
+                    <!-- Strategy Group -->
+                    <div class="skill-card glass-card" data-category="strategy">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">📊</span>
+                            <span class="skill-level">Proficient</span>
+                        </div>
+                        <h3>Campaign Optimization & Analytics</h3>
+                        <p>Continuous data auditing, Google Analytics 4 tracking, conversion modeling, and competitor
+                            market research.</p>
+                        <div class="skill-progress-wrap">
+                            <div class="progress-bar" style="width: 89%;"></div>
+                        </div>
+                        <span class="progress-label">89% Proficiency</span>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="strategy">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">🤖</span>
+                            <span class="skill-level">Innovative</span>
+                        </div>
+                        <h3>AI-Powered Marketing Initiatives</h3>
+                        <p>Leveraging cutting-edge AI utilities for rapid content framing, predictive search trends, and
+                            automated reporting.</p>
+                        <div class="skill-progress-wrap">
+                            <div class="progress-bar" style="width: 86%;"></div>
+                        </div>
+                        <span class="progress-label">86% Proficiency</span>
+                    </div>
+
+                    <!-- Leadership Group -->
+                    <div class="skill-card glass-card" data-category="leadership">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">👥</span>
+                            <span class="skill-level">Experienced</span>
+                        </div>
+                        <h3>Cross-Functional Team Management</h3>
+                        <p>Overseeing telecallers, typists, and instructional staff with structured KPI milestones and
+                            daily standups.</p>
+                        <div class="skill-progress-wrap">
+                            <div class="progress-bar" style="width: 91%;"></div>
+                        </div>
+                        <span class="progress-label">91% Proficiency</span>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="leadership">
+                        <div class="skill-card-top">
+                            <span class="skill-icon">📋</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <h3>Workflow SOPs & Office Compliance</h3>
+                        <p>Establishing rock-solid standardized data collection protocols, audit integrity, and internal
+                            team accountability.</p>
+                        <div class="skill-progress-wrap">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                        <span class="progress-label">90% Proficiency</span>
+                    </div>
+                </div>
+
+                <!-- Tools Stack Grid -->
+                <div class="tools-showcase glass-card">
+                    <h3 class="tools-title">Platforms & Diagnostic Tools</h3>
+                    <div class="tools-cloud">
+                        <span class="tool-item"><span class="tool-dot"></span>Google Ads</span>
+                        <span class="tool-item"><span class="tool-dot"></span>Google Search Console</span>
+                        <span class="tool-item"><span class="tool-dot"></span>Google Analytics 4 (GA4)</span>
+                        <span class="tool-item"><span class="tool-dot"></span>YouTube Creator Studio</span>
+                        <span class="tool-item"><span class="tool-dot"></span>Google Business Profile</span>
+                        <span class="tool-item"><span class="tool-dot"></span>SEMrush & Ahrefs</span>
+                        <span class="tool-item"><span class="tool-dot"></span>Meta Business Suite</span>
+                        <span class="tool-item"><span class="tool-dot"></span>Screaming Frog SEO</span>
+                        <span class="tool-item"><span class="tool-dot"></span>Keyword Planner</span>
+                        <span class="tool-item"><span class="tool-dot"></span>Canva Pro</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Career Milestones</span>
+                    <h2 class="section-title">Demonstrated Commercial Impact</h2>
+                    <p class="section-desc">Real-world execution driving lead volume, lower acquisition costs, and
+                        organized team output.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-badge bg-cyan-glow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="timeline-period">June 2025 – Present</span>
+                                    <h3 class="role-title">Search Engine Optimization Specialist</h3>
+                                    <h4 class="company-name">Sanjay Kumar's Educational Classes Private Limited</h4>
+                                </div>
+                                <span class="badge-status">Current Position</span>
+                            </div>
+
+                            <p class="timeline-summary">
+                                Spearhead full-spectrum search engine optimization and digital growth initiatives for a
+                                prominent regional educational institution, elevating admissions, search visibility, and
+                                operational agility.
+                            </p>
+
+                            <ul class="achievement-list">
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Organic Traffic Scaling:</strong> Designed and implemented
+                                        comprehensive on-site and off-site SEO blueprints resulting in notable organic
+                                        student inquiry spikes.</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Strategic Educational Rollouts:</strong> Engineered media and YouTube
+                                        promotional schedules to ensure high audience retention and maximize course
+                                        enrollment rates.</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Cross-Functional Workflow Supervision:</strong> Structured daily
+                                        operations for data entry typists, academic instructors, and inbound/outbound
+                                        telecalling representatives.</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Office Compliance & Standardized Records:</strong> Enforced data
+                                        collection and lead validation frameworks across the organizational
+                                        pipeline.</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>AI Integration:</strong> Monitored live campaign metrics to iterate
+                                        AI-assisted promotional content and optimize ongoing institutional
+                                        visibility.</span>
+                                </li>
+                            </ul>
+
+                            <div class="role-tags">
+                                <span>SEO Architecture</span>
+                                <span>YouTube Strategy</span>
+                                <span>Team Management</span>
+                                <span>Telecalling Operations</span>
+                                <span>EdTech Funnels</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-badge bg-emerald-glow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="timeline-period">March 2024 – November 2024</span>
+                                    <h3 class="role-title">Digital Marketing Specialist - Google Ads</h3>
+                                    <h4 class="company-name">Dr Lal PathLabs Franchise</h4>
+                                </div>
+                                <span class="badge-status badge-past">Completed Impact</span>
+                            </div>
+
+                            <p class="timeline-summary">
+                                Owned end-to-end paid search campaigns on Google Ads for a premier clinical diagnostic
+                                network franchise, focusing squarely on local patient acquisition and minimizing
+                                acquisition costs.
+                            </p>
+
+                            <ul class="achievement-list">
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Hyperlocal Google Ads Architecture:</strong> Built and scaled
+                                        high-intent call and search campaigns targeting diagnostic testing, checkup
+                                        packages, and pathology queries.</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>ROAS & CPA Optimization:</strong> Continuously pruned negative
+                                        keywords, refined localized geo-fencing, and optimized bid models to reduce CPA
+                                        while boosting booked tests.</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Community Brand Footprint:</strong> Enhanced local center discovery
+                                        through coordinated local search presence and digital touchpoints.</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span><strong>Executive KPI Reporting:</strong> Tracked conversion metrics, cost per
+                                        lead (CPL), and inquiry-to-visit conversion rates to guide intelligent ad budget
+                                        allocation.</span>
+                                </li>
+                            </ul>
+
+                            <div class="role-tags">
+                                <span>Google Ads</span>
+                                <span>Local Healthcare Marketing</span>
+                                <span>ROAS Optimization</span>
+                                <span>CPA Reduction</span>
+                                <span>Keyword Bidding</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive ROI & Growth Calculator -->
+        <section class="section calculator-section" id="calculator">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Interactive Growth Modeling</span>
+                    <h2 class="section-title">Growth & ROAS Simulator</h2>
+                    <p class="section-desc">See the mathematical advantage of optimizing your ad spend, conversion
+                        rates, and SEO pipeline.</p>
+                </div>
+
+                <div class="calculator-card glass-card">
+                    <div class="calculator-grid">
+                        <!-- Inputs Column -->
+                        <div class="calc-inputs">
+                            <div class="input-group">
+                                <div class="input-header">
+                                    <label for="spend-range">Monthly Marketing / Ad Spend</label>
+                                    <span class="input-val-badge" id="spend-val">₹50,000</span>
+                                </div>
+                                <input type="range" id="spend-range" min="10000" max="500000" step="5000" value="50000">
+                                <div class="range-labels">
+                                    <span>₹10K</span>
+                                    <span>₹2.5L</span>
+                                    <span>₹5L+</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-header">
+                                    <label for="cvr-range">Expected Inquiry Conversion Rate</label>
+                                    <span class="input-val-badge" id="cvr-val">3.5%</span>
+                                </div>
+                                <input type="range" id="cvr-range" min="1.0" max="8.0" step="0.1" value="3.5">
+                                <div class="range-labels">
+                                    <span>1.0% (Average)</span>
+                                    <span>4.5% (Optimized)</span>
+                                    <span>8.0% (Elite Funnel)</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-header">
+                                    <label for="deal-range">Average Customer / Student Value</label>
+                                    <span class="input-val-badge" id="deal-val">₹4,500</span>
+                                </div>
+                                <input type="range" id="deal-range" min="1000" max="50000" step="500" value="4500">
+                                <div class="range-labels">
+                                    <span>₹1,000</span>
+                                    <span>₹25,000</span>
+                                    <span>₹50,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Results Column -->
+                        <div class="calc-results">
+                            <div class="results-banner">
+                                <span class="results-tag">Projected Monthly Outcome</span>
+                                <div class="result-highlight">
+                                    <span class="result-number" id="projected-revenue">₹1,89,000</span>
+                                    <span class="result-sub">Estimated Gross Revenue Generated</span>
+                                </div>
+                            </div>
+
+                            <div class="results-subgrid">
+                                <div class="sub-result-card">
+                                    <span class="sub-title">Projected ROAS</span>
+                                    <span class="sub-value" id="projected-roas">3.78x</span>
+                                    <span class="sub-note">Return On Ad Spend</span>
+                                </div>
+
+                                <div class="sub-result-card">
+                                    <span class="sub-title">Estimated Qualified Inquiries</span>
+                                    <span class="sub-value" id="projected-leads">42</span>
+                                    <span class="sub-note">Patients / Enrollments</span>
+                                </div>
+
+                                <div class="sub-result-card">
+                                    <span class="sub-title">Estimated Effective CPA</span>
+                                    <span class="sub-value" id="projected-cpa">₹1,190</span>
+                                    <span class="sub-note">Cost Per Acquisition</span>
+                                </div>
+                            </div>
+
+                            <p class="calc-disclaimer">
+                                💡 <em>Calculated based on optimized ad quality scores, local search intent capture, and
+                                    structured telecalling conversion funnels executed by Md Ashique.</em>
+                            </p>
+
+                            <a href="#contact" class="btn btn-primary btn-block">
+                                Discuss Your Campaign Goals
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Ready to Scale Your Search & Paid Performance?</h2>
+                    <p class="section-desc">Whether you have an upcoming project, need full-time growth marketing
+                        leadership, or want a thorough SEO audit, let's talk.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info-column">
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon-box bg-cyan-glow">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-type">Direct Email</span>
+                                <a href="mailto:ashiquektr099@gmail.com"
+                                    class="contact-link">ashiquektr099@gmail.com</a>
+                                <button class="copy-small-btn" id="copy-email-btn-2"
+                                    data-email="ashiquektr099@gmail.com">Copy Email</button>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon-box bg-emerald-glow">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.32c-.88 0-1.6.72-1.6 1.6s.72 1.6 1.6 1.6 1.6-.72 1.6-1.6-.72-1.6-1.6-1.6Z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-type">Professional Network</span>
+                                <a href="https://www.linkedin.com/in/md-ashique-9029262a7" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="contact-link">linkedin.com/in/md-ashique-9029262a7</a>
+                                <span class="contact-sub">Available for direct messaging</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon-box bg-violet-glow">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-type">Based In</span>
+                                <span class="contact-main">Katihar, Bihar, India</span>
+                                <span class="contact-sub">Open to Remote & On-Site Opportunities</span>
+                            </div>
+                        </div>
+
+                        <div class="resume-cta-banner glass-card">
+                            <h4>Need an Offline Copy?</h4>
+                            <p>You can view or print the official 1-page A4 resume directly.</p>
+                            <button class="btn btn-outline btn-sm" id="banner-resume-btn">
+                                Open Official Resume
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-column">
+                        <div class="form-container glass-card">
+                            <h3 class="form-title">Send a Message</h3>
+                            <p class="form-desc">Fill out the details below and I will respond within 24 hours.</p>
+
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label for="name">Your Name *</label>
+                                        <input type="text" id="name" name="name" required
+                                            placeholder="e.g. Rahul Sharma">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="email">Your Email *</label>
+                                        <input type="email" id="email" name="email" required
+                                            placeholder="rahul@example.com">
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="service">Primary Interest</label>
+                                    <select id="service" name="service">
+                                        <option value="SEO & Organic Growth">Search Engine Optimization (SEO)</option>
+                                        <option value="Google Ads / Paid Acquisition">Google Ads / Paid Acquisition
+                                        </option>
+                                        <option value="YouTube SEO & Video Growth">YouTube SEO & Content Strategy
+                                        </option>
+                                        <option value="Team Operations & Workflow">Growth Operations / Full-time Role
+                                        </option>
+                                        <option value="General Consultation">General Inquiry</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="message">Project / Role Details *</label>
+                                    <textarea id="message" name="message" rows="4" required
+                                        placeholder="Share your business goals, target markets, or role requirements..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                                    <span>Send Inquiry</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                </button>
+                                <div class="form-feedback" id="form-feedback"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#hero" class="brand-logo">
+                    <span class="logo-badge">MA</span>
+                    <span class="logo-text">Md Ashique<span class="dot">.</span></span>
+                </a>
+                <p>Digital Marketing Strategist | SEO | Paid Ads | Growth Marketing</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Competencies</a>
+                <a href="#experience">Experience</a>
+                <a href="#calculator">ROI Simulator</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Md Ashique. All rights reserved.</p>
+                <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="19" x2="12" y2="5"></line>
+                        <polyline points="5 12 12 5 19 12"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Modal -->
+    <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title-box">
+                    <h2>Md Ashique - Official Resume</h2>
+                    <span class="modal-sub">Formatted Single-Page A4 Resume</span>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-primary btn-sm" id="modal-print-btn">
+                        🖨️ Print / Save PDF
+                    </button>
+                    <button class="modal-close" id="modal-close-btn" aria-label="Close modal">✕</button>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <!-- Authentic Resume Document Sheet -->
+                <div class="resume-sheet" id="printable-resume">
+                    <header class="sheet-header">
+                        <h1 class="sheet-name">Md Ashique</h1>
+                        <h2 class="sheet-title">Digital Marketing Strategist | SEO | Paid Ads | Growth Marketing</h2>
+                        <div class="sheet-contact">
+                            <span>📍 Katihar, Bihar, India</span>
+                            <span>📧 <a href="mailto:ashiquektr099@gmail.com">ashiquektr099@gmail.com</a></span>
+                            <span>🔗 <a href="https://www.linkedin.com/in/md-ashique-9029262a7" target="_blank"
+                                    rel="noopener">LinkedIn Profile</a></span>
+                        </div>
+                    </header>
+
+                    <section class="sheet-section">
+                        <h3 class="sheet-heading">Career Objective</h3>
+                        <p class="sheet-text">
+                            Goal-oriented Digital Marketing & SEO Specialist with a proven track record of driving
+                            measurable business growth through targeted paid ads, YouTube SEO, and data-driven content
+                            strategies. Adept at leading cross-functional teams, streamlining operational workflows, and
+                            deploying digital campaigns that enhance user engagement and maximize search visibility in
+                            highly competitive markets.
+                        </p>
+                    </section>
+
+                    <section class="sheet-section">
+                        <h3 class="sheet-heading">Core Competencies & Skills</h3>
+                        <ul class="sheet-list">
+                            <li><strong>Digital Marketing & SEO:</strong> Search Engine Optimization (SEO), YouTube SEO,
+                                Google Ads, Paid Advertising, Growth Marketing, Lead Generation, Local SEO.</li>
+                            <li><strong>Marketing Strategy & Tracking:</strong> Campaign Optimization, Competitor
+                                Analysis, Return on Ad Spend (ROAS) Maximization, Cost-Per-Acquisition (CPA) Reduction.
+                            </li>
+                            <li><strong>Leadership & Administration:</strong> Cross-functional Team Management
+                                (Telecallers, Typists, Instructors), Strategic Content Rollouts, Digital Workflow
+                                Operations, Office Compliance.</li>
+                        </ul>
+                    </section>
+
+                    <section class="sheet-section">
+                        <h3 class="sheet-heading">Professional Experience</h3>
+
+                        <div class="sheet-job">
+                            <div class="sheet-job-header">
+                                <span class="sheet-company">SANJAY KUMAR'S EDUCATIONAL CLASSES PRIVATE LIMITED</span>
+                                <span class="sheet-date">June 2025 - Present</span>
+                            </div>
+                            <div class="sheet-role">Search Engine Optimization Specialist</div>
+                            <ul class="sheet-bullets">
+                                <li>Spearhead comprehensive SEO and growth management strategies to increase website
+                                    traffic, generate quality leads, and improve search rankings.</li>
+                                <li>Execute strategic educational content rollouts and media promotional plans to drive
+                                    high retention and student engagement.</li>
+                                <li>Supervise and structure operational workflows for diverse teams, including academic
+                                    instructors, data entry typists, and telecalling representatives.</li>
+                                <li>Ensure strict office compliance and streamline standard data records collection
+                                    procedures for internal staff members.</li>
+                                <li>Monitor marketing campaign performance metrics to optimize AI-powered promotional
+                                    initiatives and support business growth.</li>
+                            </ul>
+                        </div>
+
+                        <div class="sheet-job">
+                            <div class="sheet-job-header">
+                                <span class="sheet-company">DR LAL PATHLABS FRANCHISE</span>
+                                <span class="sheet-date">March 2024 - November 2024</span>
+                            </div>
+                            <div class="sheet-role">Digital Marketing Specialist - Google Ads</div>
+                            <ul class="sheet-bullets">
+                                <li>Developed and managed highly targeted Google Ads campaigns for a local diagnostic
+                                    franchise to drive patient inquiries and increase clinic foot traffic.</li>
+                                <li>Optimized local keyword targeting, ad copy, and bidding strategies to maximize
+                                    return on ad spend (ROAS) and lower cost-per-acquisition (CPA).</li>
+                                <li>Executed localized digital marketing initiatives to enhance community visibility and
+                                    support the consistent business growth of the center.</li>
+                                <li>Monitored campaign metrics to adjust ad spending efficiently and report on key
+                                    performance indicators for local business operations.</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Element -->
+    <div class="toast" id="toast">Email copied to clipboard!</div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
