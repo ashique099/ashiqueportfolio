@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 9. Contact Form Submission Simulation
+    // 9. Real Email Contact Form Submission to ashiquektr099@gmail.com
     const contactForm = document.getElementById('contact-form');
     const formFeedback = document.getElementById('form-feedback');
     const submitBtn = document.getElementById('submit-btn');
@@ -245,25 +245,52 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             
             const originalBtnText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<span>Sending Inquiry...</span>';
+            submitBtn.innerHTML = '<span>Sending to Md Ashique...</span>';
             submitBtn.disabled = true;
 
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
             const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value.trim();
 
-            setTimeout(() => {
+            const payload = {
+                name: name,
+                email: email,
+                service: service,
+                message: message,
+                _subject: `New Portfolio Lead from ${name} (${service})`,
+                _template: 'table',
+                _captcha: 'false'
+            };
+
+            fetch('https://formsubmit.co/ajax/ashiquektr099@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(res => res.json())
+            .then(data => {
                 submitBtn.innerHTML = originalBtnText;
                 submitBtn.disabled = false;
                 formFeedback.className = 'form-feedback success';
-                formFeedback.innerHTML = `<strong>Thank you, ${name}!</strong> Your inquiry regarding <em>${service}</em> has been received. Md Ashique will connect with you at <strong>${email}</strong> shortly.`;
+                formFeedback.innerHTML = `<strong>Thank you, ${name}!</strong> Your details have been sent directly to Md Ashique's email (<strong>ashiquektr099@gmail.com</strong>). I will respond to <strong>${email}</strong> shortly.`;
                 contactForm.reset();
 
                 setTimeout(() => {
                     formFeedback.style.display = 'none';
                     formFeedback.className = 'form-feedback';
-                }, 8000);
-            }, 900);
+                }, 10000);
+            })
+            .catch(err => {
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+                formFeedback.className = 'form-feedback success';
+                formFeedback.innerHTML = `<strong>Opening email client...</strong> If it doesn't open automatically, you can email directly to <strong>ashiquektr099@gmail.com</strong>.`;
+                window.location.href = `mailto:ashiquektr099@gmail.com?subject=${encodeURIComponent('Portfolio Lead: ' + service + ' from ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nService: ' + service + '\n\nDetails:\n' + message)}`;
+            });
         });
     }
 
